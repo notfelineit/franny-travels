@@ -12,7 +12,7 @@ class PageList extends Component {
 const PageLink = (props) => {
   const { lastPublicationDate, rawJSON, slug } = props
   const title = rawJSON['travel-title']
-  const { text, type } = title[0]
+  const { text } = title[0]
   return (
     <li key={slug}>
       <Link to={`travel/${slug}`}> {text} </Link>

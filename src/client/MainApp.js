@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { withQuery, withDocumentByUid, Query } from 'react-prismic-hocs'
-import { Predicates } from 'prismic-javascript'
+import { withQuery } from 'react-prismic-hocs'
 import PageList from '../components/PageList'
 
 class MainApp extends Component {
