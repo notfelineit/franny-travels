@@ -10,13 +10,13 @@ class PageList extends Component {
 }
 
 const PageLink = (props) => {
-  const { lastPublicationDate, rawJSON, slug } = props
+  const { firstPublicationDate, rawJSON, uid } = props
   const title = rawJSON['travel-title']
   const { text } = title[0]
   return (
-    <li key={slug}>
-      <Link to={`travel/${slug}`}> {text} </Link>
-      <div> {moment(lastPublicationDate).format('MMMM Do YYYY [at] h:mm:ss a')} </div>
+    <li key={uid}>
+      <Link to={`travel/${uid}`}> {text} </Link>
+      <div> {moment(firstPublicationDate).format('MMMM Do YYYY [at] h:mm:ss a')} </div>
     </li>
   )
 }

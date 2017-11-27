@@ -1,0 +1,77 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.travelContent {
+  padding-left: 16px;
+  position: relative;
+  max-width: 50%;
+}
+
+.title-heading1 {
+  transform: translateX(-41px);
+  width: 150%;
+}
+
+.smudge {
+  width: 500px;
+  position: absolute;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 0.7;}
+}
+
+.smudge.top {
+  top: 0px;
+  left: 0px;
+  animation: fadeIn 0.3s forwards;
+}
+
+.smudge.bottom {
+  right: 0px;
+  bottom: 0px;
+  animation: fadeIn 0.3s 0.3s forwards;
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: row;
+  bottom: 0px;
+  position: absolute;
+}
+
+.rating {
+  width: 25px;
+  height: 25px;
+  margin-left: 4px;
+}
+
+.travelDate {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 6px 0px 16px 0px;
+}
+
+.link {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.travelPhoto {
+  min-height: 500px;
+  min-width: 375px;
+}
